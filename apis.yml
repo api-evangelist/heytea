@@ -1,8 +1,24 @@
 aid: heytea
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/heytea.png
 name: Heytea
-description: 'Heytea is a company surfaced as a portfolio company of hongshan, idg-capital and added to
-  the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Heytea is a Chinese premium modern tea-beverage chain founded in 2012 in Jiangmen, Guangdong.
+  It pioneered cheese-topped tea and fresh-fruit "new-style tea" and has grown to thousands of stores across
+  mainland China and international markets including Singapore, the United Kingdom, Australia, Canada and the
+  United States. Backed by investors including Hongshan (formerly Sequoia Capital China) and IDG Capital, Heytea
+  runs its own mobile ordering app and retail loyalty program. As a consumer food-and-beverage retailer it
+  publishes no public developer API, documentation portal, or SDKs; this profile is retained in the network as
+  a company identity lead.'
 url: https://raw.githubusercontent.com/api-evangelist/heytea/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Food and Beverage
+- Beverages
+- Tea
+- Retail
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/heytea-domain-security.yml
 - type: Website
   url: https://heytea.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
